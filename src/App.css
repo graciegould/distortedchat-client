@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.displayChats::-webkit-scrollbar{
+
+}
+
+.container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: aquamarine;
+  font-family: 'Alfa Slab One', cursive;
+
+}
+
+.chatContainer{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+.displayChats{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  background-color: black; 
+ overflow-y: scroll;
+ font-family: 'Alfa Slab One', cursive;
+}
+.chatInput{
+  position: absolute;
+  border:5px solid white;
+  bottom:0%;
+  width: 100%;
+  height: 9%;
+  background-color: transparent;
+  display: flex;
+}
+.chatInput textarea{
+  width:100%;
+  resize: none;
+}
+.chatInput button{
+  width:20%;
+  height: 100%;
+}
+#file {
+  display: none;
+  }
+label{
+  cursor: pointer;
+  width: 20%;
+  height: 90%;
+  
+}
+.fileSelect{
+  cursor: pointer;
+  width: 100%;
+  height: 90%;
+
+}
+.fileSelect img{
+  cursor: pointer;
+  height: 100%;
+}
+#fileInpHolder{
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+}
+.chatInput button, .chatInput textarea, .fileSelect{
+  color: white;
+  border:5px solid white;
+  background-color: black;
+  font-family: 'Alfa Slab One', cursive;
+
+}
+
+.chatInput button:hover, .chatInput textarea:hover, .fileSelect:hover{
+  border:5px solid black;
+  background-color: white;
+  color:black;
+}
+
+.sentImage{
+  transition: 2s;
+  position: absolute;
+  background-color: pink;
+}
+.sentImage:hover{
+  transform: rotateZ(360deg);
+
+}
+.msg{
+  position: absolute;
+  border:1px solid white;
+  transition: 2s;
+  padding: 10px;
+  transition-property:transform;
+  border-bottom-left-radius: 20%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  background-color: black;
+  color: white;
+
+}
+.msg:hover{
+  color:black;
+background-color: white;
+
+}
+
+
+.count{
+  z-index: 1;
+  color:black;
+  position: absolute;
+  border: 5px;
+  background-color:white;
+}
